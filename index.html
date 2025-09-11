@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayomide Adegoke - AI and Mechatronics</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex">
+        <!-- Sidebar Navigation -->
+        <aside id="sidebar" class="sidebar w-64 p-6 bg-gray-950 text-white fixed h-full flex flex-col justify-between hidden md:flex transition-all duration-300 ease-in-out md:-translate-x-full">
+            <div>
+                <h1 class="text-3xl font-bold mb-8 text-center">Ayomide Adegoke</h1>
+                <nav class="nav-links">
+                    <ul>
+                        <li class="mb-4"><a href="#hero" class="block text-lg hover:text-gray-400 transition-colors duration-300">Home</a></li>
+                        <li class="mb-4"><a href="#about" class="block text-lg hover:text-gray-400 transition-colors duration-300">About</a></li>
+                        <li class="mb-4"><a href="#achievements" class="block text-lg hover:text-gray-400 transition-colors duration-300">Achievements</a></li>
+                        <li class="mb-4"><a href="#experience" class="block text-lg hover:text-gray-400 transition-colors duration-300">Experience</a></li>
+                        <li class="mb-4"><a href="#projects" class="block text-lg hover:text-gray-400 transition-colors duration-300">Projects</a></li>
+                        <li class="mb-4"><a href="#skills" class="block text-lg hover:text-gray-400 transition-colors duration-300">Skills</a></li>
+                        <li class="mb-4"><a href="#hobbies" class="block text-lg hover:text-gray-400 transition-colors duration-300">Hobbies</a></li>
+                        <li class="mb-4"><a href="#vision" class="block text-lg hover:text-gray-400 transition-colors duration-300">Vision</a></li>
+                        <li class="mb-4"><a href="#contact" class="block text-lg hover:text-gray-400 transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="social-links flex justify-center gap-4 mb-6">
+                <a href="https://github.com/ayomide-100" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">GitHub</a>
+                <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">LinkedIn</a>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <div class="main-content flex-1 md:ml-0 transition-all duration-300 ease-in-out">
+            <header class="md:hidden bg-gray-950 text-white p-4 flex justify-between items-center z-50">
+                <h1 class="text-xl font-bold">Ayomide Adegoke</h1>
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </header>
+
+            <!-- Desktop Sidebar Toggle Button -->
+            <button id="desktop-sidebar-toggle" class="hidden md:block fixed top-4 left-0 p-2 bg-gray-800 text-white rounded-r-lg shadow-lg z-50 transition-all duration-300 ease-in-out">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            </button>
+
+            <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-900 text-white p-4 absolute w-full z-40 hidden">
+                <ul>
+                    <li class="mb-2"><a href="#hero" class="block text-lg hover:text-gray-400 transition-colors duration-300">Home</a></li>
+                    <li class="mb-2"><a href="#about" class="block text-lg hover:text-gray-400 transition-colors duration-300">About</a></li>
+                    <li class="mb-2"><a href="#achievements" class="block text-lg hover:text-gray-400 transition-colors duration-300">Achievements</a></li>
+                    <li class="mb-2"><a href="#experience" class="block text-lg hover:text-gray-400 transition-colors duration-300">Experience</a></li>
+                    <li class="mb-2"><a href="#projects" class="block text-lg hover:text-gray-400 transition-colors duration-300">Projects</a></li>
+                    <li class="mb-2"><a href="#skills" class="block text-lg hover:text-gray-400 transition-colors duration-300">Skills</a></li>
+                    <li class="mb-2"><a href="#hobbies" class="block text-lg hover:text-gray-400 transition-colors duration-300">Hobbies</a></li>
+                    <li class="mb-2"><a href="#vision" class="block text-lg hover:text-gray-400 transition-colors duration-300">Vision</a></li>
+                    <li class="mb-2"><a href="#contact" class="block text-lg hover:text-gray-400 transition-colors duration-300">Contact</a></li>
+                </ul>
+                <div class="social-links flex justify-center gap-4 mt-4">
+                    <a href="https://github.com/ayomide-100" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">LinkedIn</a>
+                </div>
+            </nav>
+
+            <main>
+                <section id="hero" class="hero-section">
+                    <div class="container">
+                        <div class="hero-content">
+                            <img src="images/profile.jpg" alt="Ayomide Adegoke" class="profile-img animate-fade-in-down">
+                            <h2 class="text-5xl font-extrabold mb-4 text-white animate-fade-in-left">Hello, I'm Ayomide Adegoke</h2>
+                            <h3 class="text-3xl font-semibold text-white mb-6 animate-fade-in-right">AI and Mechatronics Engineer</h3>
+                            <p class="text-xl font-medium max-w-2xl mx-auto text-gray-200 animate-fade-in-up">Passionate about the intersection of artificial intelligence and robotics.</p>
+                            <div class="social-links mt-8 flex justify-center gap-4 animate-fade-in-up">
+                                <a href="https://github.com/ayomide-100" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">GitHub</a>
+                                <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ml-4">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="about" class="about-section py-20 animate-fade-in-up">
+                    <div class="container flex flex-col md:flex-row items-center justify-center gap-10">
+                        <div class="md:w-1/2 text-center md:text-left p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300">
+                            <h2 class="text-4xl font-bold mb-6 text-white">About Me</h2>
+                            <p class="text-lg leading-relaxed text-gray-200">I am a dedicated AI and Mechatronics engineer with a strong foundation in developing intelligent systems and robotic applications. My expertise spans machine learning, control systems, and automation, allowing me to create innovative solutions for complex challenges.</p>
+                            <p class="text-lg leading-relaxed mt-4 text-gray-200">My passion lies in creating robust and efficient solutions that bridge the gap between theoretical concepts and practical applications, driving forward the future of intelligent technologies.</p>
+                        </div>
+                        <div class="md:w-1/2 flex justify-center">
+                            <img src="images/about-ai.jpg" alt="About AI" class="w-full max-w-md rounded-lg shadow-lg transform transition-transform duration-500 hover:scale-105">
+                        </div>
+                    </div>
+                </section>
+
+                <section id="achievements" class="achievements-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Achievements</h2>
+                        <div class="achievement-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            <div class="achievement-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Project Alpha Lead</h3>
+                                <p class="text-lg leading-relaxed text-gray-300">Led a team to develop an autonomous drone system for environmental monitoring, resulting in a 30% increase in data collection efficiency.</p>
+                            </div>
+                            <div class="achievement-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Robotics Competition Winner</h3>
+                                <p class="text-lg leading-relaxed text-gray-300">Secured first place in the annual national robotics competition for innovative robot design and programming.</p>
+                            </div>
+                            <div class="achievement-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Published Research</h3>
+                                <p class="text-lg leading-relaxed text-gray-300">Co-authored a research paper on novel AI algorithms for predictive maintenance in industrial robots, published in a leading journal.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="experience" class="experience-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Experience</h2>
+                        <div class="space-y-10">
+                            <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-2 text-white">AI Engineer Intern - Tech Innovators Inc.</h3>
+                                <p class="text-lg font-medium text-gray-400 mb-3"><em>May 2023 - August 2023</em></p>
+                                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-300">
+                                    <li>Developed and deployed machine learning models for anomaly detection in manufacturing processes.</li>
+                                    <li>Contributed to the design and implementation of a real-time data processing pipeline.</li>
+                                </ul>
+                            </div>
+                            <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-2 text-white">Mechatronics Co-op - Robotics Solutions Ltd.</h3>
+                                <p class="text-lg font-medium text-gray-400 mb-3"><em>January 2022 - April 2022</em></p>
+                                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-300">
+                                    <li>Assisted in the assembly and testing of robotic prototypes.</li>
+                                    <li>Programmed microcontrollers for various robotic functionalities.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="projects" class="projects-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Featured Projects</h2>
+                        <div class="project-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Autonomous Navigation System</h3>
+                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Developed an AI-powered autonomous navigation system for mobile robots using deep reinforcement learning. Achieved 95% navigation accuracy in dynamic environments.</p>
+                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
+                            </div>
+                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Smart Robotic Arm for Assembly</h3>
+                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Designed and implemented a smart robotic arm capable of precision assembly tasks using computer vision for object recognition and manipulation.</p>
+                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
+                            </div>
+                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Predictive Maintenance for Industrial IoT</h3>
+                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Built a predictive maintenance solution for industrial machinery leveraging IoT sensor data and machine learning to forecast equipment failures, reducing downtime by 20%.</p>
+                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills" class="skills-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Skills & Tech Stack</h2>
+                        <div class="skills-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
+                                <h3 class="text-xl font-semibold mb-6 text-white">Programming Languages</h3>
+                                <div class="grid grid-cols-2 gap-4 w-full">
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/python-logo.png" alt="Python" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Python</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/cpp-logo.png" alt="C++" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">C++</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/javascript-logo.png" alt="JavaScript" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
+                                <h3 class="text-xl font-semibold mb-6 text-white">AI/ML Frameworks</h3>
+                                <div class="grid grid-cols-2 gap-4 w-full">
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/tensorflow-logo.png" alt="TensorFlow" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">TensorFlow</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/pytorch-logo.png" alt="PyTorch" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">PyTorch</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/scikit-learn-logo.png" alt="Scikit-learn" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Scikit-learn</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
+                                <h3 class="text-xl font-semibold mb-6 text-white">Robotics</h3>
+                                <div class="grid grid-cols-2 gap-4 w-full">
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/ros-logo.png" alt="ROS" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">ROS (Robot Operating System)</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/gazebo-logo.png" alt="Gazebo" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Gazebo</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/arduino-logo.png" alt="Arduino" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Arduino</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
+                                <h3 class="text-xl font-semibold mb-6 text-white">Tools & Platforms</h3>
+                                <div class="grid grid-cols-2 gap-4 w-full">
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/docker-logo.png" alt="Docker" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Docker</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/git-logo.png" alt="Git" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Git</span>
+                                    </div>
+                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                                        <img src="images/jupyter-logo.png" alt="Jupyter" class="w-12 h-12 mb-2">
+                                        <span class="text-lg font-medium text-gray-200">Jupyter</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="hobbies" class="hobbies-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Hobbies</h2>
+                        <div class="hobbies-list flex flex-col md:flex-row justify-center items-center gap-10 text-center">
+                            <div class="p-6 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Basketball</h3>
+                                <p class="text-lg leading-relaxed text-gray-300">A great way to stay active and develop teamwork.</p>
+                            </div>
+                            <div class="p-6 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
+                                <h3 class="text-xl font-semibold mb-3 text-white">Reading</h3>
+                                <p class="text-lg leading-relaxed text-gray-300">Exploring new ideas and expanding my knowledge across various genres.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="vision" class="vision-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">My Vision</h2>
+                        <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-6 p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 text-gray-200">My long-term vision is to be at the forefront of innovation in AI and Mechatronics, developing intelligent robotic systems that address real-world challenges in areas such as sustainable energy, advanced manufacturing, and healthcare. I aim to contribute to a future where AI and robotics seamlessly integrate into daily life, enhancing human capabilities and improving quality of life.</p>
+                        <p class="text-lg leading-relaxed max-w-3xl mx-auto p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 mt-6 text-gray-200">I am particularly interested in exploring the ethical implications of advanced AI and ensuring that technology is developed responsibly and for the benefit of all.</p>
+                    </div>
+                </section>
+
+                <section id="contact" class="contact-section py-20 animate-fade-in-up">
+                    <div class="container">
+                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Get in Touch</h2>
+                        <p class="text-lg leading-relaxed text-center max-w-xl mx-auto mb-8 text-gray-200">I'm always open to new opportunities and collaborations. Feel free to connect with me!</p>
+                        <p class="text-xl font-medium text-center mb-6 text-gray-200">Phone: +2348084214920</p>
+                        <div class="social-links flex justify-center items-center flex-wrap gap-6 animate-pulse-on-hover">
+                            <a href="https://github.com/ayomide-100" target="_blank" class="inline-block text-white px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-lg font-semibold transform hover:scale-105 hover:shadow-xl">GitHub</a>
+                            <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="inline-block text-white px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-lg font-semibold transform hover:scale-105 hover:shadow-xl">LinkedIn</a>
+                            <a href="mailto:dynamic.ayo100@gmail.com" class="inline-block text-white px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-lg font-semibold transform hover:scale-105 hover:shadow-xl">Email Me</a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="py-8 text-center text-gray-400">
+                <div class="container">
+                    <p class="text-gray-400">&copy; 2025 Ayomide Adegoke. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sidebar = document.getElementById('sidebar');
+            const mainContent = document.querySelector('.main-content');
+            const menuButton = document.getElementById('menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const desktopSidebarToggle = document.getElementById('desktop-sidebar-toggle');
+
+            // Mobile menu toggle
+            menuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Desktop sidebar toggle
+            desktopSidebarToggle.addEventListener('click', function() {
+                sidebar.classList.toggle('-translate-x-full');
+                mainContent.classList.toggle('md:ml-0');
+                mainContent.classList.toggle('md:ml-64');
+                desktopSidebarToggle.classList.toggle('left-64');
+                desktopSidebarToggle.classList.toggle('left-0');
+                // Change icon based on sidebar state
+                const icon = desktopSidebarToggle.querySelector('svg');
+                if (sidebar.classList.contains('-translate-x-full')) {
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>'; // Open icon
+                } else {
+                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>'; // Close icon
+                }
+            });
+
+            // Smooth scrolling for all navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - (window.innerHeight / 2) + (targetElement.offsetHeight / 2), // Center the section
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
