@@ -1,0 +1,524 @@
+
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Secondary Color: Black */
+    color: #fff; /* Primary Color: White */
+    background-image: url('images/ai-background.jpg'); /* Placeholder for AI background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; /* Needed for the ::before pseudo-element */
+    min-height: 100vh; /* Ensure body takes full height */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay for better text readability */
+    z-index: -1;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+/* Header and Navigation (for mobile, handled by Tailwind classes in HTML) */
+header {
+    /* background: #1a1a1a; */ /* Removed, handled by Tailwind on mobile header */
+    /* color: #fff; */
+    /* padding: 1rem 0; */
+    /* position: fixed; */
+    /* width: 100%; */
+    /* top: 0; */
+    /* z-index: 1000; */
+}
+
+header .container {
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+
+.logo {
+    /* margin: 0; */
+    /* font-size: 1.8rem; */
+}
+
+.nav-links {
+    /* list-style: none; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* display: flex; */
+}
+
+.nav-links li {
+    /* margin-left: 20px; */
+}
+
+.nav-links a {
+    /* color: #fff; */
+    /* text-decoration: none; */
+    /* font-weight: bold; */
+    /* transition: color 0.3s ease; */
+}
+
+.nav-links a:hover {
+    /* color: #aaa; */ /* Removed as Tailwind will handle hover */
+}
+
+/* Sidebar Styles - Desktop */
+.sidebar {
+    transition: width 0.3s ease;
+}
+
+/* Main Content Area */
+.main-content {
+    transition: margin-left 0.3s ease;
+}
+
+/* Mobile Menu Toggle */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-100%);
+}
+
+#mobile-menu.hidden {
+    transform: translateX(0);
+}
+
+/* Hero Section */
+.hero-section {
+    background: transparent; /* Changed to transparent for uniform background */
+    color: #fff;
+    text-align: center;
+    padding: 150px 0 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Full viewport height */
+    box-sizing: border-box;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 4px solid #fff;
+}
+
+.hero-content h3 {
+    font-size: 1.8rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* General Section Styling */
+section {
+    padding: 60px 0;
+    color: #fff;
+    background-color: transparent; /* Ensure all sections are transparent */
+}
+
+section:nth-of-type(even) {
+    /* background-color: transparent; */ /* Not needed anymore */
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+/* About Section */
+.about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* New animation for fade-in effect */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fade-in-up 1s ease-out forwards;
+    opacity: 0; /* Start invisible */
+}
+
+@keyframes fade-in-down {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in-left {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-left {
+    animation: fade-in-left 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes fade-in-right {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade-in-right {
+    animation: fade-in-right 1s ease-out forwards;
+    opacity: 0;
+}
+
+@keyframes pulse-on-hover {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animate-pulse-on-hover a:hover {
+    animation: pulse-on-hover 0.5s ease-in-out infinite;
+}
+
+/* Achievements Section */
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.achievement-item {
+    background-color: rgba(26, 26, 26, 0.7); /* Subtle background for readability */
+    padding: 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.achievement-item h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Experience Section */
+.experience-item {
+    background-color: rgba(26, 26, 26, 0.7); /* Subtle background for readability */
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.experience-item h3 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item ul li {
+    margin-bottom: 5px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.experience-item ul li::before {
+    content: '\2022'; /* Bullet point */
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+/* Projects Section */
+.projects-section {
+    /* background-color: transparent; */ /* Not needed anymore */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-item {
+    background-color: rgba(26, 26, 26, 0.7); /* Subtle background for readability */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: none;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-item h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.project-item p {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.project-item a {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-item a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.skill-category {
+    background-color: rgba(26, 26, 26, 0.7); /* Subtle background for readability */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-category h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-category ul li {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+/* Hobbies Section */
+.hobbies-list {
+    text-align: center;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: auto;
+}
+
+.hobbies-list ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: left;
+}
+
+.hobbies-list ul li {
+    margin-bottom: 10px;
+}
+
+/* Vision Section */
+.vision-section {
+    text-align: center;
+    background-color: rgba(26, 26, 26, 0.7); /* Subtle background for readability */
+}
+
+.vision-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-section p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.contact-section .social-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-section .social-links a {
+    border: 2px solid #fff;
+    padding: 12px 25px;
+    margin: 0 15px;
+}
+
+/* Footer */
+footer {
+    background: transparent;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    /* Header and Mobile Menu for responsiveness */
+    header.md\:hidden {
+        display: flex;
+    }
+
+    .sidebar.md\:flex {
+        display: none; /* Hide sidebar on mobile */
+    }
+
+    .main-content.md\:ml-64 {
+        margin-left: 0; /* Remove margin on mobile */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    .hero-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1.5rem;
+    }
+
+    .social-links a {
+        display: block;
+        margin: 10px auto;
+        width: fit-content;
+    }
+
+    .achievement-grid, .skills-grid, .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
