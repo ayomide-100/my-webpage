@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Desktop sidebar toggle
     desktopSidebarToggle.addEventListener('click', function() {
-        sidebar.classList.toggle('-translate-x-full');
+        sidebar.classList.toggle('md:-translate-x-full');
         mainContent.classList.toggle('md:ml-0');
         mainContent.classList.toggle('md:ml-64');
         desktopSidebarToggle.classList.toggle('left-64');
@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Change icon based on sidebar state
         const icon = desktopSidebarToggle.querySelector('svg');
-        if (sidebar.classList.contains('-translate-x-full')) {
+        if (sidebar.classList.contains('md:-translate-x-full')) {
             icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>'; // Open icon
         } else {
             icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>'; // Close icon
