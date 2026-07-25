@@ -453,54 +453,6 @@ section {
     display: inline-block;
 }
 
-/* Skill bars */
-.skill-bar-item {
-    margin-bottom: 20px;
-}
-
-.skill-bar-label {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.92rem;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 8px;
-}
-
-.skill-bar-label span:last-child {
-    color: var(--accent);
-    font-weight: 700;
-}
-
-.skill-bar-track {
-    height: 4px;
-    border-radius: 3px;
-    background: var(--bg-panel-2);
-    position: relative;
-    overflow: visible;
-}
-
-.skill-bar-fill {
-    height: 100%;
-    border-radius: 3px;
-    background: var(--accent);
-    width: var(--fill, 0%);
-    position: relative;
-}
-
-.skill-bar-fill::after {
-    content: '';
-    position: absolute;
-    right: -6px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: var(--accent);
-    box-shadow: 0 0 0 4px var(--accent-soft);
-}
-
 /* Tag lists */
 .tag-list {
     display: flex;
@@ -687,11 +639,25 @@ section {
     border-bottom: 1px solid var(--border);
 }
 
+.project-group-title {
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 60px 0 0;
+}
+
+.project-group-title:first-of-type {
+    margin-top: 30px;
+}
+
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .project-item {
@@ -728,6 +694,14 @@ section {
     font-size: 0.95rem;
     margin: 0 0 22px;
     flex-grow: 1;
+}
+
+.project-item p.project-meta {
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 700;
+    margin: 0 0 12px;
+    flex-grow: 0;
 }
 
 .project-item a {
