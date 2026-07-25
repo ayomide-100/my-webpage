@@ -1,46 +1,55 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const sidebar = document.getElementById('sidebar');
-    const mainContent = document.querySelector('.main-content');
-    const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const desktopSidebarToggle = document.getElementById('desktop-sidebar-toggle');
+document.addEventListener('DOMContentLoaded', function () {
+    const nav = document.getElementById('site-nav');
+    const navToggle = document.getElementById('nav-toggle');
+    const mobileNav = document.getElementById('mobile-nav');
+    const navLinks = document.querySelectorAll('.nav-links a, #mobile-nav a');
+    const sections = document.querySelectorAll('main section[id]');
+
+    // Solid nav background after scrolling past the hero
+    function updateNavBackground() {
+        nav.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    updateNavBackground();
+    window.addEventListener('scroll', updateNavBackground);
 
     // Mobile menu toggle
-    menuButton.addEventListener('click', function() {
-        mobileMenu.classList.toggle('hidden');
+    navToggle.addEventListener('click', function () {
+        mobileNav.classList.toggle('open');
     });
 
-    // Close mobile menu when a link is clicked
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-        link.addEventListener('click', function() {
-            mobileMenu.classList.add('hidden');
+    document.querySelectorAll('#mobile-nav a').forEach(function (link) {
+        link.addEventListener('click', function () {
+            mobileNav.classList.remove('open');
         });
     });
 
-    // Desktop sidebar toggle
-    desktopSidebarToggle.addEventListener('click', function() {
-        sidebar.classList.toggle('md:-translate-x-full');
-        mainContent.classList.toggle('md:ml-0');
-        mainContent.classList.toggle('md:ml-64');
-        desktopSidebarToggle.classList.toggle('left-64');
-        desktopSidebarToggle.classList.toggle('left-0');
-
-        // Change icon based on sidebar state
-        const icon = desktopSidebarToggle.querySelector('svg');
-        if (sidebar.classList.contains('md:-translate-x-full')) {
-            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>'; // Open icon
-        } else {
-            icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>'; // Close icon
-        }
-    });
-
-    // Smooth scrolling for all navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    // Smooth scroll for in-page links
+    document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
         anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+            const targetId = this.getAttribute('href');
+            const target = document.querySelector(targetId);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         });
     });
+
+    // Highlight the active nav link based on scroll position
+    function setActiveLink() {
+        let currentId = sections[0] ? sections[0].id : '';
+        const scrollPos = window.scrollY + window.innerHeight / 3;
+
+        sections.forEach(function (section) {
+            if (scrollPos >= section.offsetTop) {
+                currentId = section.id;
+            }
+        });
+
+        navLinks.forEach(function (link) {
+            link.classList.toggle('active', link.getAttribute('href') === '#' + currentId);
+        });
+    }
+    setActiveLink();
+    window.addEventListener('scroll', setActiveLink);
 });

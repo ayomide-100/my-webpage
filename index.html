@@ -3,340 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayomide Adegoke - AI and Mechatronics</title>
+    <title>Ayomide Adegoke - AI and Mechatronics Engineer</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <div class="flex">
-        <!-- Sidebar Navigation -->
-        <aside id="sidebar" class="sidebar w-64 p-6 bg-gray-950 text-white fixed h-full flex flex-col justify-between hidden md:flex transition-all duration-300 ease-in-out md:-translate-x-full">
-            <div>
-                <h1 class="text-3xl font-bold mb-8 text-center">Ayomide Adegoke</h1>
-                <nav class="nav-links">
-                    <ul>
-                        <li class="mb-4"><a href="#hero" class="block text-lg hover:text-gray-400 transition-colors duration-300">Home</a></li>
-                        <li class="mb-4"><a href="#about" class="block text-lg hover:text-gray-400 transition-colors duration-300">About</a></li>
-                        <li class="mb-4"><a href="#achievements" class="block text-lg hover:text-gray-400 transition-colors duration-300">Work Experience</a></li>
-                        <li class="mb-4"><a href="#experience" class="block text-lg hover:text-gray-400 transition-colors duration-300">Education</a></li>
-                        <li class="mb-4"><a href="#projects" class="block text-lg hover:text-gray-400 transition-colors duration-300">Projects</a></li>
-                        <li class="mb-4"><a href="#skills" class="block text-lg hover:text-gray-400 transition-colors duration-300">Skills</a></li>
-                        <li class="mb-4"><a href="#hobbies" class="block text-lg hover:text-gray-400 transition-colors duration-300">Hobbies</a></li>
-                        <li class="mb-4"><a href="#vision" class="block text-lg hover:text-gray-400 transition-colors duration-300">Vision</a></li>
-                        <li class="mb-4"><a href="#contact" class="block text-lg hover:text-gray-400 transition-colors duration-300">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="social-links flex justify-center gap-4 mb-6">
-                <a href="https://github.com/ayomide-100" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">GitHub</a>
-                <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">LinkedIn</a>
-            </div>
-        </aside>
 
-        <!-- Main Content Area -->
-        <div class="main-content flex-1 md:ml-0 transition-all duration-300 ease-in-out">
-            <header class="md:hidden bg-gray-950 text-white p-4 flex justify-between items-center z-50">
-                <h1 class="text-xl font-bold">Ayomide Adegoke</h1>
-                <button id="menu-button" class="text-white focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
-                </button>
-            </header>
+    <!-- Top Navigation -->
+    <nav id="site-nav">
+        <div class="container nav-inner">
+            <a href="#hero" class="brand">Ayomide<span>.</span></a>
 
-            <!-- Desktop Sidebar Toggle Button -->
-            <button id="desktop-sidebar-toggle" class="hidden md:block fixed top-4 left-0 p-2 bg-gray-800 text-white rounded-r-lg shadow-lg z-50 transition-all duration-300 ease-in-out">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="nav-contact">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                <span>+234 808 421 4920</span>
+            </div>
+
+            <button id="nav-toggle" aria-label="Toggle navigation">
+                <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
-
-            <nav id="mobile-menu" class="mobile-menu md:hidden bg-gray-900 text-white p-4 absolute w-full z-40 hidden">
-                <ul>
-                    <li class="mb-2"><a href="#hero" class="block text-lg hover:text-gray-400 transition-colors duration-300">Home</a></li>
-                    <li class="mb-2"><a href="#about" class="block text-lg hover:text-gray-400 transition-colors duration-300">About</a></li>
-                    <li class="mb-2"><a href="#achievements" class="block text-lg hover:text-gray-400 transition-colors duration-300">Work Experience</a></li>
-                    <li class="mb-2"><a href="#experience" class="block text-lg hover:text-gray-400 transition-colors duration-300">Education</a></li>
-                    <li class="mb-2"><a href="#projects" class="block text-lg hover:text-gray-400 transition-colors duration-300">Projects</a></li>
-                    <li class="mb-2"><a href="#skills" class="block text-lg hover:text-gray-400 transition-colors duration-300">Skills</a></li>
-                    <li class="mb-2"><a href="#hobbies" class="block text-lg hover:text-gray-400 transition-colors duration-300">Hobbies</a></li>
-                    <li class="mb-2"><a href="#vision" class="block text-lg hover:text-gray-400 transition-colors duration-300">Vision</a></li>
-                    <li class="mb-2"><a href="#contact" class="block text-lg hover:text-gray-400 transition-colors duration-300">Contact</a></li>
-                </ul>
-                <div class="social-links flex justify-center gap-4 mt-4">
-                    <a href="https://github.com/ayomide-100" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">GitHub</a>
-                    <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300 p-2 rounded-lg bg-white/10 hover:bg-white/20">LinkedIn</a>
-                </div>
-            </nav>
-
-            <main>
-                <section id="hero" class="hero-section">
-                    <div class="container">
-                        <div class="hero-content">
-                            <img src="images/profile.jpg" alt="Ayomide Adegoke" class="profile-img animate-fade-in-down">
-                            <h2 class="text-5xl font-extrabold mb-4 text-white animate-fade-in-left">Hello, I'm Ayomide Adegoke</h2>
-                            <h3 class="text-3xl font-semibold text-white mb-6 animate-fade-in-right">AI and Mechatronics Engineer</h3>
-                            <p class="text-xl font-medium max-w-2xl mx-auto text-gray-200 animate-fade-in-up">As a Machine Learning Engineer with hands-on experience in Python, scikit-learn, and foundational deep learning, I am eager to support your team in developing data-driven solutions. I’ve contributed to projects involving model training, data preprocessing, and feature engineering. With a strong grasp of supervised learning and a growing understanding of TensorFlow, I’m ready to help build intelligent, high-impact features while continuously improving model performance through analytical experimentation and documentation.</p>
-                            <div class="social-links mt-8 flex justify-center gap-4 animate-fade-in-up">
-                                <a href="https://github.com/ayomide-100" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">GitHub</a>
-                                <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg ml-4">LinkedIn</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="about" class="about-section py-20 animate-fade-in-up">
-                    <div class="container flex flex-col md:flex-row items-center justify-center gap-10">
-                        <div class="md:w-full text-center p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300">
-                            <h2 class="text-4xl font-bold mb-6 text-white">About Me</h2>
-                            <p class="text-lg leading-relaxed text-gray-200">As a Machine Learning Engineer with hands-on experience in Python, scikit-learn, and foundational deep learning, I am eager to support your team in developing data-driven solutions. I’ve contributed to projects involving model training, data preprocessing, and feature engineering. With a strong grasp of supervised learning and a growing understanding of TensorFlow, I’m ready to help build intelligent, high-impact features while continuously improving model performance through analytical experimentation and documentation.</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="achievements" class="achievements-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Work Experience</h2>
-                        <div class="space-y-10">
-                            <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-2 text-white">AI and Robotics Intern - National Center for Artificial Intelligence and Robotics</h3>
-                                <p class="text-lg font-medium text-gray-400 mb-3"><em>Apr 2025 - Sep 2025</em></p>
-                                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-300">
-                                    <li>Developed and integrated robotic systems, implementing advanced artificial intelligence algorithms to enhance their intelligence, optimize performance, and significantly improve operational efficiency.</li>
-                                    <li>Contributed to the design and deployment of intelligent automation solutions, leading to a demonstrable increase in system autonomy and effectiveness.</li>
-                                </ul>
-                            </div>
-                            <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-2 text-white">Machine Learning Intern - DALA Innovation</h3>
-                                <p class="text-lg font-medium text-gray-400 mb-3"><em>Jul 2025 - Present</em></p>
-                                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-300">
-                                    <li>Analyzed and meticulously cleaned complex datasets, ensuring data integrity and readiness for model development.</li>
-                                    <li>Developed, trained, and rigorously evaluated various machine learning models to extract actionable insights and drive predictive capabilities.</li>
-                                    <li>Maintained detailed documentation of data pipelines, model architectures, and performance metrics.</li>
-                                </ul>
-                            </div>
-                            <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-2 text-white">Robotics Intern - Coderina EdTech Foundation</h3>
-                                <p class="text-lg font-medium text-gray-400 mb-3"><em>Aug 2024 - Oct 2024</em></p>
-                                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-300">
-                                    <li>Worked on the AI powered Surveillance Robot project, contributing to its design, production, and management.</li>
-                                    <li>Gained hands-on experience in robotics development and automation and software development.</li>
-                                    <li>Assisted in the design and integration of embedded systems for robotic applications with AI and Machine learning.</li>
-                                    <li>Collaborated with a team to develop innovative solutions for real-world automation challenges.</li>
-                                </ul>
-                            </div>
-                            <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-2 text-white">Machine Learning Intern - JayVicElla Enterprises</h3>
-                                <p class="text-lg font-medium text-gray-400 mb-3"><em>Jun 2022 - Jul 2023</em></p>
-                                <ul class="list-disc list-inside text-lg leading-relaxed text-gray-300">
-                                    <li>Assisted in data collection, data cleaning, designing, and evaluation of machine learning models.</li>
-                                    <li>Generated visualizations, reports, and actionable insights from complex datasets.</li>
-                                    <li>Maintained detailed documentation of workflows, models, and results.</li>
-                                    <li>Provided data-driven solutions and improved sales by 25%.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="experience" class="experience-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Education</h2>
-                        <div class="experience-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                            <h3 class="text-xl font-semibold mb-2 text-white">Bachelor of Engineering (B.E.), Mechatronics Engineering - Air Force Institute of Technology Kaduna</h3>
-                            <p class="text-lg font-medium text-gray-400 mb-3"><em>Kaduna, Nigeria</em></p>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="projects" class="projects-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Featured Projects</h2>
-                        <div class="space-y-10">
-                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-3 text-white">Surveillance Robot (Coderina EdTech Foundation)</h3>
-                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Designed and developed a surveillance robot capable of surveying land areas and collecting real-time data (audio, video). Integrated embedded systems, AI-based object detection, and control mechanisms to optimize robot functionality and enable intelligent navigation and environmental awareness.</p>
-                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
-                            </div>
-                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-3 text-white">Resume Screening (Personal Project)</h3>
-                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Built and trained machine learning models to classify resumes into predefined job categories such as Data Science, HR, Sales, etc., using raw resume text data. Performed thorough text preprocessing and feature engineering to extract meaningful features like keyword frequency, vocabulary density, and resume length indicators. Developed custom transformers and integrated them into a full scikit-learn pipeline, including scaling, TF-IDF vectorization, and target encoding. Trained and evaluated Logistic Regression and XGBoost classifiers, then fine-tuned them using GridSearchCV, achieving up to 99% accuracy on the validation set. Saved the best-performing models and preprocessing pipeline using pickle for future deployment.</p>
-                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
-                            </div>
-                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-3 text-white">Health Insurance Premium Prediction (Personal Project)</h3>
-                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Developed and trained a Random Forest Regressor model, that predicts health insurance price based on costumer information and data. Performed EDA and data visualization on dataset to better undestand the dataset, then performed preprocessing techniques to improve quality of dataset. Evaluated the model, performed cross-validation and hyperparameter tuning to achieve a model accuracy of 97%.</p>
-                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
-                            </div>
-                            <div class="project-item p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-3 text-white">Instagram Reach Analysis and Engagement Prediction (Personal Project)</h3>
-                                <p class="text-lg leading-relaxed text-gray-300 mb-6">Explored and analyzed Instagram data to identify trends, patterns in user engagement and factors that contribute to reach. Utilised data visualization techniques to gain insights and perform preprocessing. Utilised a Passive Aggressive Regressor for batch learning and experimented with a Random Forest Regressor.</p>
-                                <a href="#" target="_blank" class="inline-block text-white px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">View Project</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="skills" class="skills-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Skills & Tech Stack</h2>
-                        <div class="skills-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
-                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
-                                <h3 class="text-xl font-semibold mb-6 text-white">Programming Languages</h3>
-                                <div class="grid grid-cols-2 gap-4 w-full">
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Python</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">SQL</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
-                                <h3 class="text-xl font-semibold mb-6 text-white">Libraries and Frameworks</h3>
-                                <div class="grid grid-cols-2 gap-4 w-full">
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Scikit-Learn</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">PyTorch</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">TensorFlow</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">NLTK</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Hugging Face Transformers</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">LangChain</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="skill-category p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1 flex flex-col items-center">
-                                <h3 class="text-xl font-semibold mb-6 text-white">Tools & Platforms</h3>
-                                <div class="grid grid-cols-2 gap-4 w-full">
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Git/Github</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Jupyter Notebook</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Anaconda</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Streamlit (Dashboard)</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Natural Language Processing</span>
-                                    </div>
-                                    <div class="flex flex-col items-center p-3 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                                        <span class="text-lg font-medium text-gray-200">Hugging Face</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="hobbies" class="hobbies-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Hobbies</h2>
-                        <div class="hobbies-list flex flex-col md:flex-row justify-center items-center gap-10 text-center">
-                            <div class="p-6 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-3 text-white">Basketball</h3>
-                                <p class="text-lg leading-relaxed text-gray-300">A great way to stay active and develop teamwork.</p>
-                            </div>
-                            <div class="p-6 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-1">
-                                <h3 class="text-xl font-semibold mb-3 text-white">Reading</h3>
-                                <p class="text-lg leading-relaxed text-gray-300">Exploring new ideas and expanding my knowledge across various genres.</p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <section id="vision" class="vision-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">My Vision</h2>
-                        <p class="text-lg leading-relaxed max-w-3xl mx-auto mb-6 p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 text-gray-200">My long-term vision is to be at the forefront of innovation in AI and Mechatronics, developing intelligent robotic systems that address real-world challenges in areas such as sustainable energy, advanced manufacturing, and healthcare. I aim to contribute to a future where AI and robotics seamlessly integrate into daily life, enhancing human capabilities and improving quality of life.</p>
-                        <p class="text-lg leading-relaxed max-w-3xl mx-auto p-8 rounded-lg bg-white/5 backdrop-filter backdrop-blur-lg shadow-lg border border-white/10 mt-6 text-gray-200">I am particularly interested in exploring the ethical implications of advanced AI and ensuring that technology is developed responsibly and for the benefit of all.</p>
-                    </div>
-                </section>
-
-                <section id="contact" class="contact-section py-20 animate-fade-in-up">
-                    <div class="container">
-                        <h2 class="text-4xl font-bold mb-12 text-center text-white">Get in Touch</h2>
-                        <p class="text-lg leading-relaxed text-center max-w-xl mx-auto mb-8 text-gray-200">I'm always open to new opportunities and collaborations. Feel free to connect with me!</p>
-                        <p class="text-xl font-medium text-center mb-6 text-gray-200">Email: aadegoke100@gmail.com</p>
-                        <p class="text-xl font-medium text-center mb-6 text-gray-200">Phone: +2348084214920</p>
-                        <div class="social-links flex justify-center items-center flex-wrap gap-6 animate-pulse-on-hover">
-                            <a href="https://github.com/ayomide-100" target="_blank" class="inline-block text-white px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-lg font-semibold transform hover:scale-105 hover:shadow-xl">GitHub</a>
-                            <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="inline-block text-white px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-lg font-semibold transform hover:scale-105 hover:shadow-xl">LinkedIn</a>
-                            <a href="mailto:aadegoke100@gmail.com" class="inline-block text-white px-8 py-4 rounded-lg bg-white/10 hover:bg-white/20 transition-all duration-300 text-lg font-semibold transform hover:scale-105 hover:shadow-xl">Email Me</a>
-                        </div>
-                    </div>
-                </section>
-            </main>
-
-            <footer class="py-8 text-center text-gray-400">
-                <div class="container">
-                    <p class="text-gray-400">&copy; 2025 Ayomide Adegoke. All rights reserved.</p>
-                </div>
-            </footer>
         </div>
-    </div>
+
+        <div id="mobile-nav">
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#resume">Resume</a>
+            <a href="#projects">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <p class="hero-eyebrow">AI &amp; Mechatronics Engineer</p>
+                    <h1>Ayomide Adegoke</h1>
+                    <h2>Machine Learning Engineer</h2>
+                    <p>Hands-on experience in Python, scikit-learn, and deep learning &mdash; building data-driven solutions through model training, data preprocessing, feature engineering, and analytical experimentation.</p>
+                    <div class="btn-row">
+                        <a href="#resume" class="btn-pill filled">Resume</a>
+                        <a href="#projects" class="btn-pill">Portfolio</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://github.com/ayomide-100" target="_blank" class="icon-btn" aria-label="GitHub">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="icon-btn" aria-label="LinkedIn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5 5 0 0 1 16 8z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                        <a href="mailto:aadegoke100@gmail.com" class="icon-btn" aria-label="Email">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="m22 6-10 7L2 6"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="about-section">
+            <div class="container about-grid">
+                <div class="about-text reveal">
+                    <p class="section-tag">About Me</p>
+                    <h2 class="section-title">Turning data into intelligent, real-world systems</h2>
+                    <a href="mailto:aadegoke100@gmail.com" class="about-email">aadegoke100@gmail.com</a>
+                    <p>As a Machine Learning Engineer with hands-on experience in Python, scikit-learn, and foundational deep learning, I support teams in developing data-driven solutions. I've contributed to projects involving model training, data preprocessing, and feature engineering.</p>
+                    <p>With a strong grasp of supervised learning and a growing understanding of TensorFlow, I help build intelligent, high-impact features while continuously improving model performance through analytical experimentation and documentation.</p>
+                    <div class="about-meta">
+                        <div>
+                            <h4>Based In</h4>
+                            <p>Kaduna, Nigeria</p>
+                        </div>
+                        <div>
+                            <h4>Focus</h4>
+                            <p>AI &amp; Robotics</p>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+234 808 421 4920</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-photo-wrap reveal">
+                    <div class="about-photo-frame"></div>
+                    <img src="images/profile.jpg" alt="Ayomide Adegoke" class="about-photo">
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume dashboard: skills / experience / education / hobbies -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <p class="section-tag centered">Resume</p>
+                <h2 class="section-title centered">Skills, Experience &amp; Education</h2>
+
+                <div class="resume-grid">
+                    <!-- Column 1: Skills -->
+                    <div>
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Technical Skills</h3>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-label"><span>Python</span><span>90%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 90%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-label"><span>SQL</span><span>75%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 75%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-label"><span>Scikit-Learn</span><span>85%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 85%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-label"><span>TensorFlow / PyTorch</span><span>70%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 70%"></div></div>
+                            </div>
+                            <div class="skill-bar-item">
+                                <div class="skill-bar-label"><span>NLP / Transformers</span><span>65%</span></div>
+                                <div class="skill-bar-track"><div class="skill-bar-fill" style="--fill: 65%"></div></div>
+                            </div>
+                        </div>
+
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Tools &amp; Platforms</h3>
+                            <div class="tag-list">
+                                <span class="tag-pill">Git / GitHub</span>
+                                <span class="tag-pill">Jupyter Notebook</span>
+                                <span class="tag-pill">Anaconda</span>
+                                <span class="tag-pill">Streamlit</span>
+                                <span class="tag-pill">Hugging Face</span>
+                                <span class="tag-pill">LangChain</span>
+                            </div>
+                        </div>
+
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Personal Skills</h3>
+                            <div class="tag-list">
+                                <span class="tag-pill">Creativity</span>
+                                <span class="tag-pill">Team Work</span>
+                                <span class="tag-pill">Organisation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Experience + Education -->
+                    <div>
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Experience</h3>
+                            <div class="timeline">
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                                    </div>
+                                    <h4>Machine Learning Intern &mdash; DALA Innovation</h4>
+                                    <p class="role-meta">Jul 2025 &ndash; Present</p>
+                                    <ul>
+                                        <li>Analyzed and cleaned complex datasets for model readiness.</li>
+                                        <li>Trained and evaluated ML models to extract actionable insights.</li>
+                                        <li>Documented data pipelines, architectures, and performance metrics.</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"></path><rect x="4" y="8" width="16" height="12" rx="2"></rect><path d="M2 14h2M20 14h2M9 13v2M15 13v2"></path></svg>
+                                    </div>
+                                    <h4>AI &amp; Robotics Intern &mdash; National Center for AI and Robotics</h4>
+                                    <p class="role-meta">Apr 2025 &ndash; Sep 2025</p>
+                                    <ul>
+                                        <li>Developed and integrated robotic systems with AI algorithms.</li>
+                                        <li>Contributed to intelligent automation, boosting system autonomy.</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></svg>
+                                    </div>
+                                    <h4>Robotics Intern &mdash; Coderina EdTech Foundation</h4>
+                                    <p class="role-meta">Aug 2024 &ndash; Oct 2024</p>
+                                    <ul>
+                                        <li>Built an AI-powered surveillance robot from design to deployment.</li>
+                                        <li>Integrated embedded systems for intelligent navigation.</li>
+                                        <li>Collaborated on real-world automation challenges.</li>
+                                    </ul>
+                                </div>
+                                <div class="timeline-item">
+                                    <div class="timeline-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"></path><path d="m19 9-5 5-4-4-3 3"></path></svg>
+                                    </div>
+                                    <h4>Machine Learning Intern &mdash; JayVicElla Enterprises</h4>
+                                    <p class="role-meta">Jun 2022 &ndash; Jul 2023</p>
+                                    <ul>
+                                        <li>Assisted in data collection, cleaning, and model evaluation.</li>
+                                        <li>Generated visualizations and reports from complex datasets.</li>
+                                        <li>Delivered data-driven solutions that improved sales by 25%.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Education</h3>
+                            <div class="education-item">
+                                <h4>B.E., Mechatronics Engineering</h4>
+                                <p>Air Force Institute of Technology &mdash; Kaduna, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: What I can do / focus areas / hobbies -->
+                    <div>
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">What Can I Do?</h3>
+                            <ul class="check-list">
+                                <li>Machine learning model development &amp; tuning</li>
+                                <li>Data preprocessing &amp; feature engineering</li>
+                                <li>AI &amp; robotics integration</li>
+                                <li>NLP &amp; LLM-powered applications</li>
+                            </ul>
+                        </div>
+
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Focus Areas</h3>
+                            <div class="tag-list">
+                                <span class="tag-pill">Supervised Learning</span>
+                                <span class="tag-pill">Deep Learning</span>
+                                <span class="tag-pill">Automation</span>
+                            </div>
+                        </div>
+
+                        <div class="resume-block reveal">
+                            <h3 class="resume-heading">Hobbies &amp; Interests</h3>
+                            <div class="hobby-grid">
+                                <div class="hobby-card">
+                                    <div class="hobby-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14 14 0 0 1 0 20M12 2a14 14 0 0 0 0 20M2 12h20M3.5 7.5h17M3.5 16.5h17"></path></svg>
+                                    </div>
+                                    <span>Basketball</span>
+                                </div>
+                                <div class="hobby-card">
+                                    <div class="hobby-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+                                    </div>
+                                    <span>Reading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vision -->
+        <section id="vision" class="vision-section">
+            <div class="container">
+                <p class="section-tag centered">Vision</p>
+                <p class="vision-quote">To be at the forefront of innovation in <span>AI and Mechatronics</span>, developing intelligent robotic systems that address real-world challenges in sustainable energy, advanced manufacturing, and healthcare.</p>
+                <p class="vision-sub">I'm particularly interested in the ethical implications of advanced AI, and ensuring technology is developed responsibly and for the benefit of all.</p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <p class="section-tag centered">Portfolio</p>
+                <h2 class="section-title centered">Featured Projects</h2>
+                <div class="project-grid">
+                    <div class="project-item reveal">
+                        <p class="project-number">01</p>
+                        <h3>Surveillance Robot</h3>
+                        <p>Designed a surveillance robot capable of surveying land areas and collecting real-time audio/video data, integrating embedded systems and AI-based object detection for intelligent navigation.</p>
+                        <a href="#" target="_blank">View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+                        </a>
+                    </div>
+                    <div class="project-item reveal">
+                        <p class="project-number">02</p>
+                        <h3>Resume Screening</h3>
+                        <p>Trained ML models to classify resumes into job categories using TF-IDF, custom transformers, and a full scikit-learn pipeline. Fine-tuned Logistic Regression and XGBoost with GridSearchCV, reaching 99% accuracy.</p>
+                        <a href="#" target="_blank">View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+                        </a>
+                    </div>
+                    <div class="project-item reveal">
+                        <p class="project-number">03</p>
+                        <h3>Health Insurance Premium Prediction</h3>
+                        <p>Built a Random Forest Regressor to predict insurance pricing from customer data, with EDA, preprocessing, cross-validation, and hyperparameter tuning reaching 97% accuracy.</p>
+                        <a href="#" target="_blank">View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+                        </a>
+                    </div>
+                    <div class="project-item reveal">
+                        <p class="project-number">04</p>
+                        <h3>Instagram Reach Analysis</h3>
+                        <p>Analyzed Instagram data to identify engagement trends and reach drivers, using data visualization plus a Passive Aggressive Regressor and Random Forest Regressor for prediction.</p>
+                        <a href="#" target="_blank">View Project
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <p class="section-tag centered">Get In Touch</p>
+                <h2 class="section-title centered">I'm always open to new opportunities</h2>
+                <div class="contact-details">
+                    <div>
+                        <h4>Email</h4>
+                        <p>aadegoke100@gmail.com</p>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+234 808 421 4920</p>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Kaduna, Nigeria</p>
+                    </div>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/ayomide-100" target="_blank" class="icon-btn" aria-label="GitHub">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayomide-adegoke-a1a35a299/" target="_blank" class="icon-btn" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4V8h4v1.5A5 5 0 0 1 16 8z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="mailto:aadegoke100@gmail.com" class="icon-btn" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><path d="m22 6-10 7L2 6"></path></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ayomide Adegoke. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sidebar = document.getElementById('sidebar');
-            const mainContent = document.querySelector('.main-content');
-            const menuButton = document.getElementById('menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const desktopSidebarToggle = document.getElementById('desktop-sidebar-toggle');
-
-            // Mobile menu toggle
-            menuButton.addEventListener('click', function() {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // Close mobile menu when a link is clicked
-            document.querySelectorAll('#mobile-menu a').forEach(link => {
-                link.addEventListener('click', function() {
-                    mobileMenu.classList.add('hidden');
-                });
-            });
-
-            // Desktop sidebar toggle
-            desktopSidebarToggle.addEventListener('click', function() {
-                sidebar.classList.toggle('-translate-x-full');
-                mainContent.classList.toggle('md:ml-0');
-                mainContent.classList.toggle('md:ml-64');
-                desktopSidebarToggle.classList.toggle('left-64');
-                desktopSidebarToggle.classList.toggle('left-0');
-                // Change icon based on sidebar state
-                const icon = desktopSidebarToggle.querySelector('svg');
-                if (sidebar.classList.contains('-translate-x-full')) {
-                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>'; // Open icon
-                } else {
-                    icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>'; // Close icon
-                }
-            });
-
-            // Smooth scrolling for all navigation links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function (e) {
-                    e.preventDefault();
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - (window.innerHeight / 2) + (targetElement.offsetHeight / 2), // Center the section
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
